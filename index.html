@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privay & Terms | Severe Techno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar" id="navbar">
+        <div class="hamburger" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo" id="main-logo">
+            <a href="https://severetechno.github.io/Privacy-Terms/">Severe Techno</a>
+        </div>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="navigateTo('overview')">Overview</button>
+            <button class="tab-btn" onclick="navigateTo('privacy-policy')">Privacy Policy</button>
+            <button class="tab-btn" onclick="navigateTo('terms-of-service')">Terms of Service</button>
+            <button class="tab-btn" onclick="navigateTo('security-principles')">Security Principles</button>
+            <button class="tab-btn" onclick="navigateTo('privacy-guide')">Privacy Guide</button>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <span onclick="toggleSidebar()">×</span>
+        </div>
+        <ul>
+            <li><a onclick="navigateTo('overview'); toggleSidebar()">Overview</a></li>
+            <li><a onclick="navigateTo('privacy-policy'); toggleSidebar()">Privacy Policy</a></li>
+            <li><a onclick="navigateTo('terms-of-service'); toggleSidebar()">Terms of Service</a></li>
+            <li><a onclick="navigateTo('security-principles'); toggleSidebar()">Security Principles</a></li>
+            <li><a onclick="navigateTo('privacy-guide'); toggleSidebar()">Privacy Guide</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div id="overview" class="about-container">
+        <h1>Overview</h1>
+        <div class="overview-container">
+            <div class="overview-item">
+                <img src="Privacy & Policy.svg" alt="Privacy Policy Icon" class="overview-icon">
+                <h3>Privacy Policy</h3>
+                <p>Discover how Severe Techno handles your personal data and ensures your privacy.</p>
+                <center><a href="https://severetechno.github.io/Privacy-Terms" onclick="navigateTo('privacy-policy')">Read our Privacy Policy</a></center>
+            </div>
+
+            <div class="overview-item">
+                <img src="Terms of Service.svg" alt="Terms of Service Icon" class="overview-icon">
+                <h3>Terms of Service</h3>
+                <p>Learn about the rules and agreements that govern the use of Severe Techno's services.</p>
+                <center><a href="https://severetechno.github.io/Privacy-Terms" onclick="navigateTo('terms-of-service')">Read Terms of Service</a></center>
+            </div>
+
+            <div class="overview-item">
+                <img src="Security Principles.svg" alt="Security Principles Icon" class="overview-icon">
+                <h3>Security Principles</h3>
+                <p>Severe Techno ensures your data is protected through cutting-edge security measures.</p>
+                <center><a href="https://severetechno.github.io/Privacy-Terms" onclick="navigateTo('security-principles')">Go to Security Principles</a></center>
+            </div>
+
+            <div class="overview-item">
+                <img src="Privacy Guide.svg" alt="Privacy Guide Icon" class="overview-icon">
+                <h3>Privacy Guide</h3>
+                <p>Get step-by-step guidance on how to safeguard your information with Severe Techno services.</p>
+                <center><a href="https://severetechno.github.io/Privacy-Terms" onclick="navigateTo('privacy-guide')">Explore the Privacy Guide</a></center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy -->
+    <div id="privacy-policy" class="about-container">
+        <h1>Privacy Policy</h1>
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>At Severe Techno, your privacy is of utmost importance to us. This Privacy Policy outlines how we collect, use, and safeguard your information when you use our services.</p>
+
+            <h2>Information We Collect</h2>
+            <p>We collect the following types of information to improve your experience and ensure the functionality of our services:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> Data like name, email address, and phone number, only if you choose to provide it for feedback or support.</li>
+                <li><strong>Usage Data:</strong> Information about your interactions with our app, such as translation queries, error reports, and device information.</li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <p>Your information is utilized for:</p>
+            <ul>
+                <li>Providing and maintaining our services.</li>
+                <li>Improving the quality and functionality of the translator.</li>
+                <li>Addressing user queries and feedback.</li>
+                <li>Enhancing security and detecting fraudulent activities.</li>
+            </ul>
+            <p>We do not sell or share your personal information with third parties.</p>
+
+            <h2>Data Security</h2>
+            <p>Severe Techno employs advanced security measures to protect your data:</p>
+            <ul>
+                <li>Encryption of sensitive data during transmission.</li>
+                <li>Regular security audits to ensure our systems are up-to-date.</li>
+                <li>Limited access to your data, restricted to authorized personnel only.</li>
+            </ul>
+
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Request a copy of the data we have about you.</li>
+                <li>Request correction or deletion of your data.</li>
+                <li>Withdraw consent for data collection (where applicable).</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <p>We may use third-party tools and services, such as analytics platforms, to improve the app. These services have their own privacy policies, which we recommend reviewing.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>Our Privacy Policy may be updated periodically. Any changes will be communicated via:</p>
+            <ul>
+                <li>Notifications on the app.</li>
+                <li>Updates on our official website.</li>
+                <li>Updates on our social media pages.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Terms of Service -->
+    <div id="terms-of-service" class="about-container">
+        <h1>Terms of Service</h1>
+        <div class="content">
+            <h2>Acceptance of Terms</h2>
+            <p>By accessing and using the Severe Techno services, you agree to abide by these Terms of Service. If you do not agree to these terms, please refrain from using our services.</p>
+
+            <h2>User Responsibilities</h2>
+            <p>As a user, you agree to:</p>
+            <ul>
+                <li>Use the services in compliance with all applicable laws and regulations.</li>
+                <li>Not engage in activities that disrupt or interfere with the functionality of the services.</li>
+                <li>Provide accurate information if prompted for feedback or registration.</li>
+            </ul>
+
+            <h2>Modifications to the Terms</h2>
+            <p>Severe Techno reserves the right to modify these terms at any time. Continued use of the services after modifications constitutes your acceptance of the updated terms.</p>
+
+            <h2>Termination</h2>
+            <p>We reserve the right to suspend or terminate your access to the services for violations of these terms or other conduct that may harm Severe Techno or its users.</p>
+        </div>
+    </div>
+
+    <!-- Security Principles -->
+    <div id="security-principles" class="about-container">
+        <h1>Security Principles</h1>
+        <div class="content">
+            <h2>Data Encryption</h2>
+            <p>All sensitive data transmitted through our services is encrypted using industry-standard encryption protocols to ensure data security during transit.</p>
+
+            <h2>Regular Audits</h2>
+            <p>We conduct regular security audits and vulnerability assessments to identify and address potential risks.</p>
+
+            <h2>Access Control</h2>
+            <p>Access to your data is limited to authorized personnel only. We ensure strict role-based access control to safeguard user information.</p>
+
+            <h2>Incident Management</h2>
+            <p>Severe Techno has an established incident response plan to handle security breaches promptly and effectively, minimizing the impact on users.</p>
+        </div>
+    </div>
+
+    <!-- Privacy Guide -->
+    <div id="privacy-guide" class="about-container">
+        <h1>Privacy Guide</h1>
+        <div class="content">
+            <h2>Understanding Your Privacy</h2>
+            <p>This guide helps you understand how to use Severe Techno’s services while safeguarding your personal data.</p>
+
+            <h2>Managing Your Information</h2>
+            <ul>
+                <li>Review and update your personal information through the provided interfaces.</li>
+                <li>Choose what data you wish to share with the platform.</li>
+            </ul>
+
+            <h2>Best Practices for Data Protection</h2>
+            <ul>
+                <li>Avoid sharing sensitive personal data unnecessarily.</li>
+                <li>Regularly review your privacy settings to ensure they align with your preferences.</li>
+            </ul>
+
+            <h2>Resources</h2>
+            <p>For detailed steps on using our privacy tools, visit our <a href="https://severetechno.github.io/Privacy-Terms">Help Center</a>.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
