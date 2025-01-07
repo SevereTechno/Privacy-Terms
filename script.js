@@ -35,3 +35,5 @@ window.onload = function () {
 // Set current year in footer dynamically
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
+
+// © Severe Techno
