@@ -31,3 +31,7 @@ function navigateTo(section) {
 window.onload = function () {
     navigateTo('overview');
 };
+
+// Set current year in footer dynamically
+document.getElementById("current-year").textContent = new Date().getFullYear();
+
