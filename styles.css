@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(45deg, #41BCF8, #FC4BFE); /* Gradient background */
+  background: linear-gradient(45deg, #41BCF8, #FC4BFE);
+  /* Gradient background */
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -22,7 +23,8 @@ body {
   max-width: 1200px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Align tabs and logo properly */
+  justify-content: space-between;
+  /* Align tabs and logo properly */
   padding: 15px 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -33,7 +35,8 @@ body {
   cursor: pointer;
   font-size: 1.5rem;
   color: #fff;
-  display: none; /* Hidden by default, visible in mobile */
+  display: none;
+  /* Hidden by default, visible in mobile */
 }
 
 .navbar .logo {
@@ -42,14 +45,16 @@ body {
   gap: 10px;
   justify-content: flex-start;
   margin-left: 0;
-  flex: 1; /* Push tabs to the right */
+  flex: 1;
+  /* Push tabs to the right */
 }
 
 .navbar .logo img {
   padding-left: 10px;
-  width: 50%; /* Scales logo size */
+  width: 50%;
+  /* Scales logo size */
   height: 50%;
-  object-fit: contain;
+
 }
 
 .navbar .logo a {
@@ -107,16 +112,17 @@ body {
 }
 
 .navbar .tab-btn.active {
-  color: #2575fc; /* Blue color for active tab text */
-  border-bottom: 2px solid #2575fc; /* Blue underline for active tab */
+  color: #2575fc;
+  /* Blue color for active tab text */
+  border-bottom: 2px solid #2575fc;
+  /* Blue underline for active tab */
 }
 
-/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 85%;
+  width: 30%;
   height: 100%;
   background: linear-gradient(45deg, #2575fc, #6a11cb);
   padding: 20px;
@@ -135,8 +141,40 @@ body {
 .sidebar-header {
   display: flex;
   align-items: center;
+  gap: 15px;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.sidebar-header img {
+  padding-right: 10px;
+  width: 85%;
+  height: 85%;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-header img {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .sidebar-header img {
+    display: none;
+  }
+}
+
+.sidebar-header span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sidebar-header i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 .sidebar ul {
@@ -155,7 +193,6 @@ body {
   display: block;
 }
 
-/* Sidebar Overlay */
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -182,11 +219,13 @@ body {
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 60px; /* Adds space below navbar */
+  margin-top: 60px;
+  /* Adds space below navbar */
 }
 
 /* Typography */
-h1, h2 {
+h1,
+h2 {
   font-size: 2rem;
   color: #2575fc;
 }
@@ -198,68 +237,83 @@ p {
   color: #333;
 }
 
-/* Footer */
-.footer {
-  margin-top: 40px;
+footer {
+  width: 100%;
+  max-width: 1200px;
   text-align: center;
+  margin-top: 20px;
   font-size: 0.9rem;
-  color: #777;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
   .navbar .tabs {
-      display: none; /* Hide tabs in mobile view */
+    display: none;
+    /* Hide tabs in mobile view */
   }
 
   .navbar .hamburger {
-      display: block; /* Show hamburger icon */
+    display: block;
+    /* Show hamburger icon */
   }
 
   .navbar .logo img {
-      width: 30%;
-      height: 30%;
+    width: 30%;
+    height: 30%;
   }
 
   .sidebar {
-      display: block;
+    display: block;
   }
 }
 
-/* For Viewports Below 970px */
-@media (max-width: 970px) {
+@media (max-width: 1080px) {
   .navbar .tabs {
-    display: none; /* Hide tabs */
+    display: none;
+    /* Hide tabs */
   }
 
-  .navbar .hamburger {
-    display: block; /* Show hamburger menu */
-  }
+  /* For Viewports Below 970px */
+  @media (max-width: 970px) {
+    .navbar .hamburger {
+      display: block;
+      /* Show hamburger menu */
+    }
 
-  .sidebar {
-    display: block; /* Show sidebar on mobile */
+    .sidebar {
+      display: block;
+      /* Show sidebar on mobile */
+    }
   }
 }
 
 /* Desktop Styles */
 @media (min-width: 971px) {
   .navbar .hamburger {
-      display: none; /* Hide hamburger icon on desktop */
+    display: none;
+    /* Hide hamburger icon on desktop */
   }
 
-  .sidebar, .sidebar-overlay {
-      display: none;
+  .sidebar,
+  .sidebar-overlay {
+    display: none;
   }
 
   .about-container {
-      margin-top: 60px;
+    margin-top: 60px;
   }
 }
 
 /* Overview Section */
 .about-container h1 {
   font-size: 2.5rem;
-  color: #4B79A1; /* Gradient-inspired blue */
+  color: #4B79A1;
+  /* Gradient-inspired blue */
   text-align: center;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -270,20 +324,24 @@ p {
   line-height: 1.8;
   text-align: justify;
   margin-bottom: 30px;
-  color: #444; /* Subtle dark gray */
+  color: #444;
+  /* Subtle dark gray */
 }
 
 /* Grid Layout for Overview Section */
 .overview-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Default: 4 items in a horizontal row */
+  grid-template-columns: repeat(4, 1fr);
+  /* Default: 4 items in a horizontal row */
   gap: 20px;
   margin-top: 20px;
 }
 
 .overview-item {
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-  backdrop-filter: blur(8px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent white */
+  backdrop-filter: blur(8px);
+  /* Frosted glass effect */
   border-radius: 12px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -332,76 +390,111 @@ p {
 }
 
 .overview-item a:hover {
-  color: #FC4BFE; /* Matches gradient for consistency */
+  color: #FC4BFE;
+  /* Matches gradient for consistency */
   text-decoration: underline;
 }
 
 /* Responsive Styles for Overview Section */
 @media (max-width: 1024px) {
   .overview-container {
-    grid-template-columns: repeat(2, 1fr); /* 2x2 grid for smaller laptops/PCs */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 grid for smaller laptops/PCs */
   }
 }
 
 @media (max-width: 768px) {
   .overview-container {
-    grid-template-columns: 1fr; /* Single column for phones */
+    grid-template-columns: 1fr;
+    /* Single column for phones */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 817px) {
+  .sidebar {
+    display: block;
+    width: 45%;
+  }
+
+  @media (max-width: 480px) {
+    .sidebar {
+      display: block;
+      width: 65%;
+    }
+  }
+
+  @media (max-width: 405px) {
+    .sidebar {
+      display: block;
+      width: 75%;
+    }
+
+    .navbar .logo a {
+      display: none;
+    }
+  }
+
   .overview-container {
-    grid-template-columns: 1fr; /* Single column for very small screens */
-    gap: 10px; /* Reduce gap */
+    grid-template-columns: 1fr;
+    /* Single column for very small screens */
+    gap: 10px;
+    /* Reduce gap */
   }
 
   .overview-item {
-    padding: 10px; /* Tighten padding */
+    padding: 10px;
+    /* Tighten padding */
   }
 
   .overview-item .overview-icon {
     width: 45px;
     height: 45px;
-    font-size: 1.3rem; /* Make icons slightly smaller */
+    font-size: 1.3rem;
+    /* Make icons slightly smaller */
   }
 
   .overview-item h3 {
-    font-size: 1rem; /* Compact headings */
+    font-size: 1rem;
+    /* Compact headings */
   }
 
   .overview-item p {
-    font-size: 0.85rem; /* Smaller text */
-    line-height: 1.4; /* Adjust line height for readability */
+    font-size: 0.85rem;
+    /* Smaller text */
+    line-height: 1.4;
+    /* Adjust line height for readability */
   }
 }
 
 /* Hide elements below 310px */
 @media (max-width: 310px) {
-  h1, /* Hide all h1 headings */
-  .navbar .logo a { /* Hide Privacy & Terms title */
+  h1 {
+    /* Hide Privacy & Terms title */
     display: none;
   }
 }
 
 /* Ensure that content text color is visible on top of backgrounds */
 .about-container {
-  background-color: rgba(255, 255, 255, 0.9); /* Adjusting background for better contrast */
-  color: #333; /* Ensuring text color is distinct */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Adjusting background for better contrast */
+  color: #333;
+  /* Ensuring text color is distinct */
 }
 
 /* Responsive layout for Privacy Policy */
 @media (max-width: 768px) {
   .content {
-      font-size: 1rem;
-      padding: 10px;
+    font-size: 1rem;
+    padding: 10px;
   }
 
   .content h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .content ul {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -410,35 +503,43 @@ p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #333;
-  margin: 20px 0; /* Adds spacing between sections */
-  padding: 20px; /* Add padding for better readability */
+  margin: 20px 0;
+  /* Adds spacing between sections */
+  padding: 20px;
+  /* Add padding for better readability */
 }
 
 .content h2 {
   font-size: 2rem;
-  color: #2575fc; /* Consistent with the theme */
-  margin-top: 30px; /* Add spacing above each section title */
+  color: #2575fc;
+  /* Consistent with the theme */
+  margin-top: 30px;
+  /* Add spacing above each section title */
 }
 
 .content ul {
   list-style-type: disc;
   margin-left: 20px;
-  margin-bottom: 20px; /* Add spacing below the list */
+  margin-bottom: 20px;
+  /* Add spacing below the list */
 }
 
 .content ul li {
-  margin-bottom: 10px; /* Space between list items */
+  margin-bottom: 10px;
+  /* Space between list items */
 }
 
 .content p {
-  margin-bottom: 20px; /* Add space between paragraphs */
+  margin-bottom: 20px;
+  /* Add space between paragraphs */
 }
 
 /* Responsive adjustments for Privacy Policy */
 @media (max-width: 768px) {
   .content {
     font-size: 1rem;
-    padding: 15px; /* Reduce padding for smaller screens */
+    padding: 15px;
+    /* Reduce padding for smaller screens */
   }
 
   .content h2 {
@@ -451,3 +552,12 @@ p {
   }
 }
 
+.navbar .logo img {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 275px;
+  /* Set a maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: contain;
+}
